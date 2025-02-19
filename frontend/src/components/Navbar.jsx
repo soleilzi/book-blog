@@ -8,8 +8,8 @@ const Navbar = () => {
   return (
     <div className='bg-emerald-600 p-7 flex items-center justify-center'>
       <Link to={'/about'}>
-        <button className='px-4 py-2 rounded-[28px] bg-emerald-500 hover:bg-emerald-400 transition duration-150'>
-          <h2 className='text-lg flex items-center gap-1'>
+        <button className='px-4 py-2 rounded-md bg-emerald-500 hover:bg-emerald-400 transition duration-150'>
+          <h2 className='text-lg flex flex-col sm:flex-row items-center gap-1'>
             <MdInfoOutline />About
           </h2>
         </button>
@@ -24,8 +24,8 @@ const Navbar = () => {
       </Link>
 
       <Link to={'/create'}>
-        <button className='px-4 py-2 rounded-[28px] bg-emerald-500 hover:bg-emerald-400 transition duration-150'>
-          <h2 className='text-lg flex items-center gap-1'>
+        <button className='px-4 py-2 rounded-md bg-emerald-500 hover:bg-emerald-400 transition duration-150'>
+          <h2 className='text-lg flex flex-col sm:flex-row items-center gap-1'>
             Create  <TbPencilPlus/>
           </h2>
         </button>

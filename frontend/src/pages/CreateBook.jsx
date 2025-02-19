@@ -85,7 +85,7 @@ const CreateBook = () => {
             className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-green-500 focus:border-green-500 dark:bg-gray-100 dark:border-gray-600 dark:placeholder-gray-400 dark:text-black dark:focus:ring-green-500 dark:focus:border-green-500" placeholder="Write your thoughts here..."></textarea>
         </div>
 
-        <button onClick={handleAddBook} 
+        <button onClick={handleAddBook}
           className='px-4 py-2 bg-emerald-500 rounded-md mr-3 hover:bg-emerald-400 transition duration-150'>
           Create
         </button>

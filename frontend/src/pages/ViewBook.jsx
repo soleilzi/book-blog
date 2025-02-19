@@ -41,7 +41,6 @@ const ViewBook = () => {
       <div className='max-w-screen-md mx-auto'>
         <div className='mt-2 flex h-[32rem] rounded-md bg-tan-50'>
 
-          {/* left section for image */}
           <div className='w-3/7 p-2 flex items-center'>
             <img
               className='h-[30rem] w-80 object-contain'
@@ -50,41 +49,35 @@ const ViewBook = () => {
             />
           </div>
 
-          {/* right section for book contents */}
           <div className='flex-1 p-4'>
-            {/* grid section for label + value pairs */}
             <div className="space-y-2">
-              {/* title */}
-              <div className="flex items-center">
+              <div className="flex flex-col md:flex-row md:items-center">
                 <p className="w-1/6 text-sm font-bold text-gray-400">Title</p>
                 <h1 className="text-2xl font-bold">{book.name}</h1>
               </div>
 
-              {/* author */}
-              <div className="flex items-center">
+              <div className="flex flex-col md:flex-row md:items-center">
                 <p className="w-1/6 text-sm font-bold text-gray-400">Author</p>
                 <h2>{book.author}</h2>
               </div>
 
-              {/* date */}
-              <div className="flex items-center">
+              <div className="flex flex-col md:flex-row md:items-center">
                 <p className="w-1/6 text-sm font-bold text-gray-400">Date</p>
                 <h2 className="text-gray-500">{formattedDate}</h2>
               </div>
 
-              {/* rating */}
-              <div className="flex items-center">
+              <div className="flex flex-col md:flex-row md:items-center">
                 <p className="w-1/6 text-sm font-bold text-gray-400">Rating</p>
                 <Rating
                   name="read-only"
                   value={book.rating || 0}
                   readOnly
                   precision={0.5}
+                  className='-ml-1'
                 />
               </div>
             </div>
 
-            {/* button section */}
             <div className='flex items-center mt-4'>
               <Link to={`/book/edit/${book._id}`}>
                 <button className="text-gray-700 text-2xl mr-3 hover:text-sky-500 transition duration-150">
@@ -97,7 +90,6 @@ const ViewBook = () => {
               </div>
             </div>
 
-            {/* description section */}
             <div className='mt-2'>
               <p className="text-sm font-bold text-gray-400">Description</p>
               <h3>{book.description}</h3>

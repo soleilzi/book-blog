@@ -17,7 +17,7 @@ const AboutPage = () => {
 
           <div className='flex justify-center items-center text-3xl mt-auto'>
             <a href="https://github.com/soleilzi" target="_blank" rel="noopener noreferrer">
-            <FaGithub className='mr-5' />
+              <FaGithub className='mr-5' />
             </a>
 
             <a href="https://www.linkedin.com/in/zeshan-zaki-619029193/" target="_blank" rel="noopener noreferrer">

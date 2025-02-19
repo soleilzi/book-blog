@@ -14,12 +14,12 @@ const BookCard = ({ book }) => {
   return (
     <div className="w-72 rounded overflow-hidden shadow-lg bg-white transition duration-300 hover:-translate-y-5 hover:shadow-xl">
       <div className='h-[26.5rem] w-full  flex items-center justify-center bg-white'>
-      <Link to={`/book/${book._id}`}>
-        <img
-          className="h-full w-full object-cover"
-          src={book.image}
-          alt={book.name}
-        />
+        <Link to={`/book/${book._id}`}>
+          <img
+            className="h-full w-full object-cover"
+            src={book.image}
+            alt={book.name}
+          />
         </Link>
       </div>
 
